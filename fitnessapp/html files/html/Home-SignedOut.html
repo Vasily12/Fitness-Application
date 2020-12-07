@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+    <!-- Header contains site logo, sign-in form, an image (if needed), a register link and description og the site -->
+    <header>
+        <h1>Logo</h1>
+        <nav class="nav_bar">
+            <ul>
+                <li><a href="">nav1</a></li>
+                <li><a href="">nav2</a></li>
+                <li><a href="">nav3</a></li>
+                <li><a href="">nav4</a></li>
+            </ul>
+        </nav>
+        <form class="box" action="SignedOutLogin.html" method="POST">
+            <input type="text" placeholder="Enter Username" id="username">
+            <input type="password" placeholder="Enter Password" id="password">
+            <input type="submit" name="" value="Sign In" id="sign_in">
+            <input type="submit" name="" value="Forgot Password" id="forgot_pass">
+        </form>
+        <h4>Don't have an account? <a href="">Register Now</a></h4>
+        <img src="" alt="" id="header_img">
+
+        <!-- "<hr>" creates a line to break apart the description from the above and below -->
+        <hr color="#95a5a6" id="break_line">
+        <p id="header_description">Description</p>
+        <hr color="#95a5a6" id="break_line">
+    </header>
+
+    <!-- main container is created to contain all the functionalities that our site provides -->
+    <div class="main_container">
+
+        <!-- Each function is wrapped in a div tag to contain it's elements -->
+        <div class="function1">
+            <h2>Function 1</h2>
+            <img src="" alt="" id="function_img">
+            <p>Description</p>
+        </div>
+        <div class="function2">
+            <h2>Function 1</h2>
+            <img src="" alt="" id="function_img">
+            <p>Description</p>
+        </div>
+        <div class="function3">
+            <h2>Function 1</h2>
+            <img src="" alt="" id="function_img">
+            <p>Description</p>
+        </div>
+        <div class="function4">
+            <h2>Function 1</h2>
+            <img src="" alt="" id="function_img">
+            <p>Description</p>
+        </div>
+    </div>
+
+    <!-- Sub container just holds an "About Us" button to link to the about us html page -->
+    <div class="sub_container">
+        <button id="about_us"><a href="/fitnessapp/html files/html/AboutUs.html">About Us</a></button>
+    </div>
+
+    <!-- Just some footer information -->
+    <footer>
+        Terms of use | Privacy Policy | Mobile Site <br>
+        2017 Copyright by Company Name, LLC. All Rights Reserved
+    </footer>
+    
+</body>
+</html>
