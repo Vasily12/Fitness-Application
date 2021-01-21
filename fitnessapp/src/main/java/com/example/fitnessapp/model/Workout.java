@@ -13,15 +13,12 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties; // Have to add this in your pom.xml
 
-
 @Entity
 @Table(name = "Workout")
 @EntityListeners(AuditingEntityListener.class)
-@JsonIgnoreProperties(value = {"createdAt", "updatedAt"}, 
-allowGetters = true)
+@JsonIgnoreProperties(value = { "createdAt", "updatedAt" }, allowGetters = true)
 
-public class Workout implements Serializable 
-{
+public class Workout implements Serializable {
 	/**
 	 * 
 	 */
@@ -32,32 +29,47 @@ public class Workout implements Serializable
 	private Long id;
 
 	private String name;
-	
+
 	private String description;
-	
+
 	private String videoLink;
-	
+
 	// You need an empty constructor
-	public Workout()
-	{
-		
+	public Workout() {
+
 	}
-	
-	public Workout(String name, String description, String videoLink)
-	{
+
+	public Workout(String name, String description, String videoLink) {
 		this.name = name;
 		this.description = description;
 		this.videoLink = videoLink;
 	}
+
 	// Getter Setter - Name
-	public String GetName() { return name; }
-	public void SetName(String name) { this.name = name; }
+	public String GetName() {
+		return name;
+	}
+
+	public void SetName(String name) {
+		this.name = name;
+	}
+
 	// Getter Setter - Description
-	public String GetDescription() { return description; }
-	public void SetDescription(String description) { this.description = description; }
+	public String GetDescription() {
+		return description;
+	}
+
+	public void SetDescription(String description) {
+		this.description = description;
+	}
+
 	// Getter Setter - Video Link
-	public String GetVideoLink() { return videoLink; }
-	public void SetVideoLink(String videoLink) { this.videoLink = videoLink; }
-	
-	
-} 
+	public String GetVideoLink() {
+		return videoLink;
+	}
+
+	public void SetVideoLink(String videoLink) {
+		this.videoLink = videoLink;
+	}
+
+}

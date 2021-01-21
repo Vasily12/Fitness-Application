@@ -2,8 +2,7 @@
   "name": "fitness_frontend",
   "version": "0.1.0",
   "private": true,
-   // Connect your database with this and to use api in your backend, use the url for axios: "/<endpoint name>" or "<endpoint name>"
-  "proxy": "http://localhost:8080/",
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
